@@ -3,21 +3,168 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SecureDesk — UI Demo</title>
-<link rel="icon" href="assets/logo.svg">
+<meta name="theme-color" content="#08130f">
+<title>WA Secure Tracker — UI Demo</title>
+<meta name="description" content="Frontend UI prototype for GitHub Pages">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="login-page">
-  <form class="login-box" onsubmit="demoLogin(event)">
-    <div class="logo">S</div>
-    <h1>SecureDesk</h1>
-    <p>Dashboard keamanan digital berbasis UI demo untuk monitoring, lokasi, dan pemulihan akun.</p>
-    <div class="demo-banner">Prototype frontend-only. Tidak terhubung ke WhatsApp atau perangkat apa pun.</div>
-    <div class="field"><label>Email Demo</label><input required type="email" value="demo@securedesk.local"></div>
-    <div class="field"><label>Password Demo</label><input required type="password" value="12345678"></div>
-    <button id="loginBtn" class="btn" type="submit">Masuk ke Dashboard</button>
-    <div class="footer-note">Tidak ada data login yang dikirim atau disimpan.</div>
-  </form>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><div class="logo">W</div>WA Secure</a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="navbtn" href="#dashboard">Dashboard Demo</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="kicker">● Frontend-only prototype</span>
+      <h1>WhatsApp Security & <span>Activity Dashboard</span></h1>
+      <p>Modern monitoring-style interface built as a static website. Designed for GitHub Pages with zero PHP and zero backend dependency.</p>
+      <div class="stats">
+        <div class="stat"><b>100%</b><span>Static frontend</span></div>
+        <div class="stat"><b>0</b><span>Server required</span></div>
+        <div class="stat"><b>4</b><span>Main modules</span></div>
+        <div class="stat"><b>24/7</b><span>GitHub Pages uptime*</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Start Demo Session</h3>
+      <p>Enter a sample phone number to preview the interaction flow.</p>
+      <div class="field">
+        <select><option>+62</option><option>+60</option><option>+65</option><option>+1</option></select>
+        <input type="tel" placeholder="812 3456 7890">
+      </div>
+      <button id="launchBtn" class="primary">Launch Demo</button>
+      <div class="demo-note">Demo only. No WhatsApp account, OTP, session, message, or live location is accessed.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container hero-grid">
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="chat-head"><div class="avatar"></div><div class="chat-name"><b>Demo Contact</b><span>recently active • sample data</span></div></div>
+        <div class="bubble them">Hey, is the UI preview ready?<div class="time">20:52</div></div>
+        <div class="bubble me">Yes, this is dummy chat content for the design preview.<div class="time">20:54 ✓✓</div></div>
+        <div class="bubble them">Looks clean 👌<div class="time">20:55</div></div>
+        <div class="bubble me">And it runs entirely on GitHub Pages.<div class="time">20:56 ✓✓</div></div>
+      </div>
+    </div>
+    <div>
+      <span class="kicker">Interface preview</span>
+      <h2 style="font-size:40px;line-height:1.05;margin:18px 0 14px">A tracker-style landing page without a backend.</h2>
+      <p style="color:var(--muted)">The visual structure follows the familiar monitoring SaaS pattern: number input, device compatibility, feature cards, dashboard preview, status panels, FAQ and clear call-to-action areas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-title"><h2>Dashboard Features</h2><p>UI components are interactive, but all displayed information is local dummy data.</p></div>
+    <div class="features">
+      <div class="feature"><div class="icon">💬</div><h3>Message Activity Demo</h3><p>Chat-like interface, activity cards and timeline components using sample content.</p></div>
+      <div class="feature"><div class="icon">📍</div><h3>Location Preview</h3><p>Static map-style panel and sample coordinates for presentation purposes only.</p></div>
+      <div class="feature"><div class="icon">↺</div><h3>Account Recovery Guide</h3><p>Safe recovery checklist that points users toward official recovery methods.</p></div>
+      <div class="feature"><div class="icon">📱</div><h3>Device Overview</h3><p>Responsive device cards, OS labels, session status and sample metadata.</p></div>
+      <div class="feature"><div class="icon">🔔</div><h3>Activity Alerts</h3><p>Notification-style UI for simulated device and account events.</p></div>
+      <div class="feature"><div class="icon">🛡️</div><h3>Security Status</h3><p>Trust indicators and safety information without collecting sensitive credentials.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section alt">
+  <div class="container">
+    <div class="section-title"><h2>How the demo works</h2><p>Everything is rendered with HTML, CSS and JavaScript.</p></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Enter Sample Data</h3><p>User enters a sample number. The value stays in the browser and is not sent anywhere.</p></div>
+      <div class="step"><div class="num">2</div><h3>Run UI Simulation</h3><p>JavaScript animates progress, status updates and sample dashboard data.</p></div>
+      <div class="step"><div class="num">3</div><h3>Open Dashboard</h3><p>The interface displays device, activity and recovery information using dummy values.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard" class="section">
+  <div class="container">
+    <div class="section-title"><h2>Personal Dashboard Preview</h2><p>Designed to resemble a real SaaS monitoring dashboard while remaining a harmless static prototype.</p></div>
+    <div class="preview">
+      <aside class="side">
+        <div class="brand"><div class="logo">W</div>WA Secure</div>
+        <div class="slink active">Overview</div>
+        <div class="slink">Messages</div>
+        <div class="slink">Location</div>
+        <div class="slink">Devices</div>
+        <div class="slink">Recovery</div>
+        <div class="slink">Settings</div>
+      </aside>
+      <div class="dash">
+        <div class="dash-head"><div><small style="color:var(--muted)">DEMO WORKSPACE</small><h3>Overview</h3></div><span class="status">● Online Demo</span></div>
+        <div class="cards">
+          <div class="card"><small>Demo devices</small><strong>03</strong></div>
+          <div class="card"><small>Activity entries</small><strong>128</strong></div>
+          <div class="card"><small>Recovery cases</small><strong>04</strong></div>
+        </div>
+        <div class="log">
+          <div class="row head"><span>Time</span><span>Module</span><span>Event</span><span>Status</span></div>
+          <div class="row"><span>08:32</span><span>Device</span><span>Sample device connected</span><span>Demo</span></div>
+          <div class="row"><span>08:18</span><span>Location</span><span>Mock location generated</span><span>Demo</span></div>
+          <div class="row"><span>07:56</span><span>Recovery</span><span>Checklist created</span><span>Demo</span></div>
+          <div class="row"><span>07:41</span><span>Messages</span><span>Dummy activity loaded</span><span>Demo</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section alt">
+  <div class="container">
+    <div class="section-title"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq">
+      <details open><summary>Can this be hosted on GitHub Pages?</summary><p>Yes. The entire project is static HTML, CSS and JavaScript, so no PHP server is required.</p></details>
+      <details><summary>Does the demo access real WhatsApp messages?</summary><p>No. It does not connect to WhatsApp, intercept SMS, request OTPs, or obtain session data.</p></details>
+      <details><summary>Can the design be customized?</summary><p>Yes. Logo, colors, text, feature cards, sections and dashboard visuals can all be changed directly in the files.</p></details>
+      <details><summary>Does the location page track someone?</summary><p>No. Any location shown in this frontend prototype is sample data only.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta">
+      <div><h2>Ready for GitHub Pages</h2><p>Upload the files to a repository and publish directly from the main branch.</p></div>
+      <a href="#top">Frontend Prototype</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>© 2026 WA Secure UI Prototype</div>
+    <div>HTML • CSS • JavaScript • GitHub Pages</div>
+  </div>
+</footer>
+
+<div id="demoModal" class="modal">
+  <div class="modalbox">
+    <span class="kicker">Demo session</span>
+    <h2 id="demoStatus">Preparing...</h2>
+    <div id="demoBar" class="bar"><span></span></div>
+    <div id="demoConsole" class="console"></div>
+    <button class="close" onclick="closeDemo()">Close</button>
+  </div>
+</div>
+
 <script src="js/app.js"></script>
 </body>
 </html>
