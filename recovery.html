@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08111f">
+<title>Account Recovery — SecureDesk</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+<aside class="sidebar">
+  <div class="brand"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+  <nav class="nav">
+    <a href="dashboard.html"><span class="ico">⌂</span>Dashboard</a>
+    <a href="whatsapp.html"><span class="ico">◉</span>WhatsApp Monitor</a>
+    <a href="location.html"><span class="ico">⌖</span>Location Tracker</a>
+    <a href="recovery.html"><span class="ico">↺</span>Account Recovery</a>
+  </nav>
+  <div class="side-note"><b>Prototype only.</b><br>Seluruh data pada UI ini adalah dummy. Tidak ada penyadapan, pengambilan OTP, sesi, atau pelacakan lokasi nyata.</div>
+</aside>
+
+<main class="main">
+
+<div class="mobile-head">
+  <div class="brand" style="margin:0"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+</div>
+<div class="mobile-links">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="whatsapp.html">WhatsApp</a>
+  <a href="location.html">Location</a>
+  <a href="recovery.html">Recovery</a>
+</div>
+
+
+<div class="topbar">
+  <div class="title"><h1>Account Recovery</h1><p>UI checklist untuk alur pemulihan akun yang aman.</p></div>
+  <span id="recState" class="status ok">Ready</span>
+</div>
+<div class="demo-banner">Jangan masukkan OTP, password, PIN, recovery code, atau kode sesi ke halaman prototype ini.</div>
+<div class="grid" style="grid-template-columns:.9fr 1.1fr">
+  <div class="card">
+    <h3>Create Recovery Checklist</h3>
+    <div class="field"><label>Platform / Account</label><input placeholder="Contoh: WhatsApp / Email"></div>
+    <div style="height:12px"></div>
+    <div class="field"><label>Case ID</label><input placeholder="CASE-2026-001"></div>
+    <div style="height:16px"></div>
+    <button id="recBtn" class="btn" onclick="runRecoveryDemo()">Generate Checklist</button>
+    <p class="muted small">Data hanya berada di browser selama halaman terbuka.</p>
+  </div>
+  <div class="card">
+    <h3>Recommended Flow</h3>
+    <div id="recResult" class="timeline">
+      <div class="step"><div class="step-num">1</div><div><h4>Start</h4><p>Klik tombol untuk membuat checklist simulasi pemulihan.</p></div></div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

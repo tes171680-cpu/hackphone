@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08111f">
+<title>Location Tracker — SecureDesk</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+<aside class="sidebar">
+  <div class="brand"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+  <nav class="nav">
+    <a href="dashboard.html"><span class="ico">⌂</span>Dashboard</a>
+    <a href="whatsapp.html"><span class="ico">◉</span>WhatsApp Monitor</a>
+    <a href="location.html"><span class="ico">⌖</span>Location Tracker</a>
+    <a href="recovery.html"><span class="ico">↺</span>Account Recovery</a>
+  </nav>
+  <div class="side-note"><b>Prototype only.</b><br>Seluruh data pada UI ini adalah dummy. Tidak ada penyadapan, pengambilan OTP, sesi, atau pelacakan lokasi nyata.</div>
+</aside>
+
+<main class="main">
+
+<div class="mobile-head">
+  <div class="brand" style="margin:0"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+</div>
+<div class="mobile-links">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="whatsapp.html">WhatsApp</a>
+  <a href="location.html">Location</a>
+  <a href="recovery.html">Recovery</a>
+</div>
+
+
+<div class="topbar">
+  <div class="title"><h1>Location Tracker</h1><p>Mockup lokasi untuk kebutuhan desain frontend.</p></div>
+  <span id="locState" class="status ok">Demo ready</span>
+</div>
+<div class="demo-banner">Tidak ada GPS atau lokasi perangkat yang diambil. Koordinat pada halaman ini hanyalah contoh.</div>
+<div class="grid" style="grid-template-columns:1.55fr .85fr">
+  <div class="card">
+    <div class="map"><div class="pin"></div></div>
+  </div>
+  <div class="card">
+    <h3>Location Details</h3>
+    <p class="muted">Titik peta dibuat statis sebagai contoh UI.</p>
+    <div class="field"><label>Target Label</label><input value="Demo Device A"></div>
+    <div style="height:14px"></div>
+    <div class="field"><label>Coordinates</label><input id="coords" readonly value="Belum dibuat"></div>
+    <div style="height:16px"></div>
+    <button id="locBtn" class="btn" onclick="runLocationDemo()">Generate Demo Location</button>
+    <div style="height:16px"></div>
+    <span class="status ok">No live tracking</span>
+  </div>
+</div>
+
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

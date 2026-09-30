@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08111f">
+<title>WhatsApp Monitor — SecureDesk</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+<aside class="sidebar">
+  <div class="brand"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+  <nav class="nav">
+    <a href="dashboard.html"><span class="ico">⌂</span>Dashboard</a>
+    <a href="whatsapp.html"><span class="ico">◉</span>WhatsApp Monitor</a>
+    <a href="location.html"><span class="ico">⌖</span>Location Tracker</a>
+    <a href="recovery.html"><span class="ico">↺</span>Account Recovery</a>
+  </nav>
+  <div class="side-note"><b>Prototype only.</b><br>Seluruh data pada UI ini adalah dummy. Tidak ada penyadapan, pengambilan OTP, sesi, atau pelacakan lokasi nyata.</div>
+</aside>
+
+<main class="main">
+
+<div class="mobile-head">
+  <div class="brand" style="margin:0"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+</div>
+<div class="mobile-links">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="whatsapp.html">WhatsApp</a>
+  <a href="location.html">Location</a>
+  <a href="recovery.html">Recovery</a>
+</div>
+
+
+<div class="topbar">
+  <div class="title"><h1>WhatsApp Monitor</h1><p>Prototype tampilan monitoring—tanpa akses ke akun WhatsApp nyata.</p></div>
+  <span id="waState" class="status ok">Idle</span>
+</div>
+<div class="demo-banner">UI ini tidak membaca chat, QR session, OTP, token, atau akun WhatsApp. Seluruh hasil adalah simulasi.</div>
+<div class="hero">
+  <h2>Device Analysis Demo</h2>
+  <p>Masukkan nomor contoh untuk melihat alur antarmuka. Nomor tidak dikirim ke server dan tidak dipakai untuk mengakses WhatsApp.</p>
+</div>
+<div class="grid cards-3">
+  <div class="card" style="grid-column:span 1">
+    <div class="field"><label>Nomor Demo</label><input id="waNumber" placeholder="+62 812 3456 7890"></div>
+    <div style="height:12px"></div>
+    <button id="waBtn" class="btn" onclick="runWhatsappDemo()">Jalankan Simulasi</button>
+    <div style="height:18px"></div>
+    <div id="waProgress" class="progress"><span></span></div>
+    <div style="height:18px"></div>
+    <div class="card" style="box-shadow:none;padding:14px">
+      <div class="muted small">Demo device</div>
+      <b>Android Device #A17</b><br>
+      <span class="muted small">Last activity: 10 minutes ago • Dummy</span>
+    </div>
+  </div>
+  <div class="card" style="grid-column:span 2">
+    <h3>Simulation Console</h3>
+    <div id="waLog" class="console"><div class="log-line">Menunggu simulasi dijalankan...</div></div>
+  </div>
+</div>
+
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

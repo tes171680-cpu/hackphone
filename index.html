@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SecureDesk — UI Demo</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <form class="login-box" onsubmit="demoLogin(event)">
+    <div class="logo">S</div>
+    <h1>SecureDesk</h1>
+    <p>Dashboard keamanan digital berbasis UI demo untuk monitoring, lokasi, dan pemulihan akun.</p>
+    <div class="demo-banner">Prototype frontend-only. Tidak terhubung ke WhatsApp atau perangkat apa pun.</div>
+    <div class="field"><label>Email Demo</label><input required type="email" value="demo@securedesk.local"></div>
+    <div class="field"><label>Password Demo</label><input required type="password" value="12345678"></div>
+    <button id="loginBtn" class="btn" type="submit">Masuk ke Dashboard</button>
+    <div class="footer-note">Tidak ada data login yang dikirim atau disimpan.</div>
+  </form>
+<script src="js/app.js"></script>
+</body>
+</html>

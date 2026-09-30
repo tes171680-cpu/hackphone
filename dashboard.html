@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08111f">
+<title>Dashboard — SecureDesk</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+<aside class="sidebar">
+  <div class="brand"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+  <nav class="nav">
+    <a href="dashboard.html"><span class="ico">⌂</span>Dashboard</a>
+    <a href="whatsapp.html"><span class="ico">◉</span>WhatsApp Monitor</a>
+    <a href="location.html"><span class="ico">⌖</span>Location Tracker</a>
+    <a href="recovery.html"><span class="ico">↺</span>Account Recovery</a>
+  </nav>
+  <div class="side-note"><b>Prototype only.</b><br>Seluruh data pada UI ini adalah dummy. Tidak ada penyadapan, pengambilan OTP, sesi, atau pelacakan lokasi nyata.</div>
+</aside>
+
+<main class="main">
+
+<div class="mobile-head">
+  <div class="brand" style="margin:0"><div class="logo">S</div><div>SecureDesk<small>UI DEMO</small></div></div>
+</div>
+<div class="mobile-links">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="whatsapp.html">WhatsApp</a>
+  <a href="location.html">Location</a>
+  <a href="recovery.html">Recovery</a>
+</div>
+
+
+<div class="topbar">
+  <div class="title"><h1>Security Dashboard</h1><p>Ringkasan sistem prototype untuk presentasi customer.</p></div>
+  <div class="badge"><span class="dot"></span> Frontend Demo Online</div>
+</div>
+<div class="demo-banner">Semua statistik, perangkat, dan aktivitas di halaman ini adalah data contoh untuk kebutuhan UI/UX.</div>
+
+<section class="grid cards-4">
+  <div class="card"><div class="muted small">Demo Devices</div><div class="metric">03</div><span class="status ok">Normal</span></div>
+  <div class="card"><div class="muted small">Activity Logs</div><div class="metric">128</div><span class="status ok">Synced</span></div>
+  <div class="card"><div class="muted small">Recovery Cases</div><div class="metric">04</div><span class="status warn">2 pending</span></div>
+  <div class="card"><div class="muted small">Security Alerts</div><div class="metric">01</div><span class="status danger">Demo alert</span></div>
+</section>
+
+<section class="section grid cards-3">
+  <div class="card">
+    <h3>WhatsApp Monitoring</h3>
+    <p class="muted">Simulasi tampilan status perangkat dan histori aktivitas dummy.</p>
+    <a class="btn secondary" href="whatsapp.html">Buka Modul</a>
+  </div>
+  <div class="card">
+    <h3>Location Tracking</h3>
+    <p class="muted">Mock map untuk menunjukkan posisi contoh tanpa live tracking.</p>
+    <a class="btn secondary" href="location.html">Buka Modul</a>
+  </div>
+  <div class="card">
+    <h3>Account Recovery</h3>
+    <p class="muted">Checklist pemulihan akun melalui jalur resmi platform.</p>
+    <a class="btn secondary" href="recovery.html">Buka Modul</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><h2>Recent Demo Activity</h2><span class="muted small">Dummy data</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Time</th><th>Module</th><th>Event</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>08:32</td><td>WhatsApp</td><td>Demo device scan completed</td><td><span class="status ok">Success</span></td></tr>
+        <tr><td>08:18</td><td>Location</td><td>Mock coordinate generated</td><td><span class="status ok">Success</span></td></tr>
+        <tr><td>07:56</td><td>Recovery</td><td>Recovery checklist created</td><td><span class="status warn">Review</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
